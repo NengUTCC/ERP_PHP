@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="google" value="notranslate"/>
     <title>ERP-Home</title>
-    <link rel="stylesheet" type="text/css" href="style/home.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
@@ -51,15 +51,14 @@
             <span class="nav-text">Profile</span>
             </a>
         </li>  
-<!--
+
         <li>                                 
-            <a href="#">
+            <a href="https://chawakorn-neng.web.app/">
             <i class="fa fa-envelope-o fa-lg"></i>
             <span class="nav-text">Contact</span>
             </a>
         </li>   
-  
-
+<!--
         <li>
             <a href="#">
             <i class="fa fa-heart-o fa-lg"></i>
@@ -90,79 +89,77 @@
             <li class="darkerlishadow">
             <a href="#">
             <i class="fa fa-clock-o fa-lg"></i>
-            <span class="nav-text">News</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
   
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-desktop fa-lg"></i>
-            <span class="nav-text">Technology</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-plane fa-lg"></i>
-            <span class="nav-text">Travel</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-shopping-cart"></i>
-            <span class="nav-text">Shopping</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-microphone fa-lg"></i>
-            <span class="nav-text">Film & Music</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
 
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-flask fa-lg"></i>
-            <span class="nav-text">Web Tools</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-picture-o fa-lg"></i>
-            <span class="nav-text">Art & Design</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
 
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-align-left fa-lg"></i>
-            <span class="nav-text">Magazines
-            </span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-gamepad fa-lg"></i>
-            <span class="nav-text">Games</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerli">
             <a href="#">
             <i class="fa fa-glass fa-lg"></i>
-            <span class="nav-text">Life & Style
-            </span>
+            <span class="nav-text">-</span>
             </a>
         </li>
         
         <li class="darkerlishadowdown">
             <a href="#">
             <i class="fa fa-rocket fa-lg"></i>
-            <span class="nav-text">Fun</span>
+            <span class="nav-text">-</span>
             </a>
         </li>
 
@@ -233,7 +230,38 @@
     <p class="detail"><b>Dashboard</b></p>
     <div class="container">
         <div class="formdisplay">
-        -
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700],
+          ['THAILAND', 1000]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+     <div id="regions_div" style="width: 900px; height: 500px;"></div>
+
         </div>
     </div>
 

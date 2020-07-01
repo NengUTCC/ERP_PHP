@@ -384,3 +384,8 @@ nav ul,nav li {
 .formdisplay {
     margin-left: 40px;
 }
+
+div#regions_div {
+    width: 100%;
+    height: 100%;
+}

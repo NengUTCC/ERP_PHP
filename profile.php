@@ -51,14 +51,15 @@
             <span class="nav-text">Profile</span>
             </a>
         </li>   
-<!--
+
         <li>                                 
-            <a href="#">
+            <a href="https://chawakorn-neng.web.app/">
             <i class="fa fa-envelope-o fa-lg"></i>
             <span class="nav-text">Contact</span>
             </a>
         </li>   
-  
+
+<!--
 
         <li>
             <a href="#">
