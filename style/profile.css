@@ -1,0 +1,395 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+body {
+    position: inherit;
+    margin:0px;
+    padding-left:75px;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);    background-attachment: fixed;
+	color:#fff;
+	font-weight:300;
+}
+
+.header {
+    position: inherit;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: #004085;
+    background-color: white;
+    border-color: #b8daff;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+p.detail {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 0em;
+        margin-inline-start: 6px;
+        margin-inline-end: 0px;
+}
+
+.container {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-right: 5px;
+    color: #004085;
+    background-color: white;
+    border-color: #b8daff;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.popup {
+    position: fixed;
+    left: 40%;
+    top: 1%;
+}
+
+h2{
+    margin-block-start: 0.20px;
+    margin-block-end: .20px;
+}
+
+.headbar {
+    font-family: 'Kanit', sans-serif;
+    color: darkslategray;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+footer {
+    position:fixed;
+    width: 100%;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    position: relative;
+    display: table-cell;
+    width: 55px;
+    height: 36px;
+    text-align: center;
+    top:12px; 
+    font-size:20px;
+}
+
+.settings {
+    /*height:10px;*/ 
+    float:left;
+    background-repeat:no-repeat;
+    width:250px;
+    margin:0px;
+    text-align: center;
+    font-size:20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* ScrolBar  */
+.scrollbar {
+    height: 90%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.scrollbar:hover {
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Scrollbar Style */ 
+#style-1::-webkit-scrollbar-track {
+    border-radius: 2px;
+}
+
+#style-1::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F7F7F7;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #BFBFBF;
+}
+/* Scrollbar End */ 
+
+.fa-lg {
+    font-size: 1em;  
+}
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 55px;
+    height: 36px;
+    text-align: center;
+    top:12px; 
+    font-size:20px;
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+    width:250px;
+    overflow:hidden;
+    opacity:1;
+}
+
+.main-menu {
+    background:#F7F7F7;
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
+    width:75px;
+    overflow:hidden;
+    -webkit-transition:width .2s linear;
+    transition:width .2s linear;
+    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+    opacity:1;
+}
+
+.main-menu>ul {
+    margin:7px 0;
+}
+
+.main-menu li {
+    position:relative;
+    display:block;
+    width:250px;
+}
+
+.main-menu li>a {
+    position:relative;
+    width:255px;
+    display:table;
+    border-collapse:collapse;
+    border-spacing:0;
+    color:#8a8a8a;
+    font-size: 13px;
+    text-decoration:none;
+    -webkit-transition:all .14s linear;
+    transition:all .14s linear;
+    font-family: 'Kanit', sans-serif;
+    border-top:1px solid #f2f2f2;
+    text-shadow: 1px 1px 1px  #fff;  
+}
+
+.main-menu .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:55px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:18px;
+}
+
+.main-menu .nav-text  {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.main-menu .fb-like {
+    left: 180px;
+    position:absolute;
+    top: 15px;
+}
+
+.main-menu>ul.logout {
+    position:absolute;
+    left:0;
+    bottom:0;  
+}
+
+.no-touch .scrollable.hover {
+    overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible; 
+}
+
+
+/* Logo Hover Property */
+.settings:hover, settings:focus {   
+    background:url( https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
+    -webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+    -moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+    -o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+    transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+
+.settings:active, settings:focus {   
+    background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+    -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+    -moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+    -o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+    transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+
+a:hover,a:focus {
+    text-decoration:none;
+    border-left:0px solid #F7F7F7;
+}
+
+nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;  
+}
+
+nav ul,nav li {
+    outline:0;
+    margin-left: 5px;
+    padding:0;
+    text-transform: uppercase;
+}
+
+/* Darker element side menu Start*/
+.darkerli {
+    background-color:#ededed;
+    text-transform:capitalize;  
+}
+
+.darkerlishadow {
+    background-color:#ededed;
+    text-transform:capitalize;  
+    -webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+    box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+.darkerlishadowdown {
+    background-color:#ededed;
+    text-transform:capitalize;  
+    -webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+    box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+/* Darker element side menu End*/
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+    color:#fff;
+    background-color:#00bbbb;
+    text-shadow: 0px 0px 0px; 
+}
+
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+.success {
+
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+.formdisplay {
+    margin-left: 40px;
+}
+
+input {
+    margin-top: 10px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 40%;
+    border: 0;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}

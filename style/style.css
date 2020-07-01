@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+#bg {
+    /*border: 2px solid black;*/
+    padding: 25px;
+    background-image: url(bg.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+body {
+    font-size: 120%;
+    background: #f8f8f8;
+}
+
+.header {
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background: #5900ff;
+    text-align: center;
+    /*border: 1px solid #000000;*/
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    /*border: 1px solid #000000;*/
+    border-radius: 0px 0px 10px 10px;
+    background: white;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    color: darkgray;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5900ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border-radius: 5px;
+    text-align: left;
+}
+.success {
+    color: #3c763d;
+    background: #dff9d8;
+    border: 1px solid #3c763d;
+}
+
+p{
+    color: gray;
+}
