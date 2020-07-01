@@ -13,9 +13,9 @@ body {
 .header {
     position: inherit;
     font-size: 20px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 10%;
     color: #004085;
     background-color: white;
     border-color: #b8daff;
@@ -23,6 +23,7 @@ body {
     margin-bottom: 0.5rem;
     border: 1px solid transparent;
     border-radius: .25rem;
+    width: 80%;
 }
 
 p.detail {
@@ -31,13 +32,16 @@ p.detail {
         margin-block-end: 0em;
         margin-inline-start: 6px;
         margin-inline-end: 0px;
+        width: 80%;
+        margin-left: 10%;
+        
 }
 
 .container {
     font-size: 18px;
-    margin-left: 5px;
+    margin-left: 10%;
     margin-top: 1px;
-    margin-right: 5px;
+    margin-right: 10%;
     color: #004085;
     background-color: white;
     border-color: #b8daff;
@@ -45,6 +49,7 @@ p.detail {
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
+    width: 80%;
 }
 
 .popup {
@@ -383,13 +388,26 @@ nav ul,nav li {
 }
 
 input {
-    margin-top: 10px;
     outline: 0;
     background: #f2f2f2;
-    width: 40%;
+    width: 100%;
     border: 0;
     border-radius: 5px 5px 5px 5px;
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
+}
+
+button.updatebutton {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 16px;
+    padding: 14px;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    border: none;
+    border-radius: 25rem;
 }

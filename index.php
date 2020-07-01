@@ -26,6 +26,9 @@
 </head>
 
 <body>
+
+
+
 <nav class="main-menu">
     <div class="headbar">
     <!--<a class="logo" href="#">ERP</a>--> 
@@ -81,8 +84,8 @@
         </a>
 
         </li>
-                            
-  
+-->
+
         </li>
             <li class="darkerlishadow">
             <a href="#">
@@ -162,8 +165,6 @@
             <span class="nav-text">Fun</span>
             </a>
         </li>
-        
--->
 
     </ul>
 
@@ -199,7 +200,9 @@
     </ul>
 
 </nav>
-    
+
+
+
     <div class="popup">
         <!--  notification message -->
         <?php if (isset($_SESSION['success'])) : ?>
@@ -254,22 +257,4 @@
     </footer>
 
 </body>
-
-<script src="random.js">
-
-    //var name = 'Chawakon';
-    //var last = 'Kongprasit'
-    //var text = 'Sucess';
-    //var a = 2;
-    //var b = 1;
-
-    //var result;
-    //result = a-b;
-
-    //alert(name+' '+last);
-    //console.log(name+' '+last,result);
-    //document.write(text);
-    
-</script>
-
 </html>

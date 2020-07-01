@@ -26,6 +26,9 @@
 </head>
 
 <body>
+
+
+
 <nav class="main-menu">
     <div class="headbar">
     <!--<a class="logo" href="#">ERP</a>--> 
@@ -81,7 +84,8 @@
         </a>
 
         </li>
-                            
+
+-->              
   
         </li>
             <li class="darkerlishadow">
@@ -162,8 +166,6 @@
             <span class="nav-text">Fun</span>
             </a>
         </li>
-        
--->
 
     </ul>
 
@@ -199,7 +201,9 @@
     </ul>
 
 </nav>
-    
+
+
+
     <div class="popup">
         <!--  notification message -->
         <?php if (isset($_SESSION['success'])) : ?>
@@ -256,18 +260,19 @@
     ?>
     <div class="formdisplay">
     <br>
-    <label>ID:</label><br>
-    <input name="id" type="text" id="id" value="<?php echo $data['id'] ?>" ><br>
+    <label>ID</label><br>
+    <input name="id" type="text" id="id" value="<?php echo $data['id'] ?>" readonly><br>
     <br>
-    <label>Username:</label><br>
+    <label>Username</label><br>
     <input name="username" type="text" id="username" value="<?php echo $data['username'] ?>" ><br>
     <br>
-    <label>Password:</label><br>
+    <label>Password</label><br>
     <input name="password" type="password" id="password" value="<?php echo $data['password'] ?>" ><br>
     <br>
-    <label>E-mail:</label><br>
+    <label>E-mail</label><br>
     <input name="email" type="text" id="email" value="<?php echo $data['email'] ?>" ><br>
     <br>
+    <button type="button" class="updatebutton">Update</button>
     </div>
     </div>
 
